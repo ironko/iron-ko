@@ -4,69 +4,52 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Portfolio</title>
+	<title>iron.ko Pixel & SDK</title>
 	
-		
-	<script>
-	function button1_click() 
-		<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
-		<script type="text/javascript">
-			kakaoPixel('6593124084470401733').pageView('iron.ko test Page View');
-		</script>
-	</script>
-
-	<script>
-	function button2_click() 
-		<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
-		<script type="text/javascript">
-		      kakaoPixel('6593124084470401733').pageView();
-		      kakaoPixel('6593124084470401733').completeRegistration('iron.ko test Registration');
-		</script>
-	</script>
-
-	<script>
-	function button3_click() 
-		<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
-		<script type="text/javascript">
-		      kakaoPixel('6593124084470401733').pageView();
-		      kakaoPixel('6593124084470401733').search({
-		        keyword: '청바지',
-		        tag: 'iron.ko test search'
-		      });
-		</script>	
+	//pagView event(Prod)
+	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+	<script type="text/javascript">
+      		kakaoPixel('6593124084470401733').pageView('pageView');
 	</script>
 	
+	
+	//pagView event(Sandbox)
+	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.dev.min.js"></script>
+	<script type="text/javascript">
+      		kakaoPixel('135123183612114661').pageView('pageView');
+	</script>
 	
 </head>
 <body>
+<Br>
   <p>iron.ko Test Page</p>
-
 	
 <H1>Production</H1><p>
 	Owner: foka@kakaocorp.com<p>
 	Pass: iron.ko에게 문의<p>
 	Track Id: 6593124084470401733<p>
 
-	<br><br><br><br><br>
-
-
-
-
-<button id="button1" onclick="button1_click();">Page View</button>
-<button id="button2" onclick="button2_click();">Registration</button>	
-<button id="button3" onclick="button3_click();">search - Kwd: 청바지</button>
-
-
 <br><br><br><br><br><br><br><br><br>
-
 
 <H1>Sandbox</H1><p>
 	Owner: iron.ko01@test.com<p>
 	Pass: iron.ko에게 문의<p>
 	Track Id: 135123183612114661<p>
-	
-		
-		
+
+
+	<br><br><br><br><br>
+
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+	<button type="button" onclick="location.href='registerComplete.html'">가입 완료</button>
+
+	<H2>pageView 이벤트 실행 완료(Production/Sandbox 각각 완료)</H2>		
 		
 	
 </body>
