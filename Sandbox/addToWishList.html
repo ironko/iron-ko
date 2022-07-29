@@ -5,26 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<title>iron.ko Pixel & SDK</title>
-		
-	<!--pagView event(Sandbox) -->
-	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.dev.min.js"></script>
-	<script type="text/javascript">
-      		kakaoPixel('135123183612114661').pageView('pageView');
-	</script>
 	
-	<!--pagView event(Prod) -->
+	<!--addToWishList(Prod) -->
 	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
 	<script type="text/javascript">
-      		kakaoPixel('6593124084470401733').pageView('pageView');
+      kakaoPixel('6593124084470401733').addToWishList({
+        id: 'ABC789'
+      });
 	</script>
-</head>
 	
+	
+	<!--addToWishList(Sandbox) -->
+		<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.dev.min.js"></script>
+		<script type="text/javascript">
+      kakaoPixel('135123183612114661').addToWishList({
+        id: 'ABC789'
+      });
+	</script>
+	
+</head>
 <body>
-
 <Br>
-<p>iron.ko Test Page</p>
+  <p>iron.ko Test Page</p>
 
-<H3>Last Commit: 2022-07-21 10:50</H3>
+<H3>Last Commit: 2022-07-19 08:00</H3>
+	
 	
 <H1>Production</H1><p>
 	Owner: foka@kakaocorp.com<p>
@@ -50,12 +55,10 @@
 	<button type="button" onclick="location.href='purchase.html'">구매</button>
 	<button type="button" onclick="location.href='preCustomer.html'">잠재 고객</button>
 	<button type="button" onclick="location.href='signUp.html'">서비스 신청 완료</button>
-
-
-	<br><br><br>
-
 	
-	<H2>페이지 오픈_pageView 이벤트 실행 완료(Production/Sandbox 각각 완료)</H2>		
+	<br><br><br>
+	
+	<H2>관심상품 추가_addToWishList 이벤트 실행(상품ID: ABC789) 완료(Production/Sandbox 각각 완료)</H2>		
 		
 	
 </body>
